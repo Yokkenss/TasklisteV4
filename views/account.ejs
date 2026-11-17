@@ -1,0 +1,6 @@
+<% if (currentUser) { %>
+<span><%= currentUser.email %> (<%= currentUser.role %>)</span>
+<form method="POST" action="/logout">
+    <button class="button button-secondary">Abmelden</button>
+</form>
+<% } %>
